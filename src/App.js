@@ -13,7 +13,10 @@ function App() {
         </main>
         <footer>
           This project was coded by Jade Irons and is{" "}
-          <a href="https://github.com/jadeirons/dictionary-project">
+          <a
+            href="https://github.com/jadeirons/dictionary-project"
+            target="_blank"
+          >
             open-source.
           </a>
         </footer>
