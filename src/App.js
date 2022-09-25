@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Dictionary from "./Dictionary";
 
@@ -16,6 +17,7 @@ function App() {
           <a
             href="https://github.com/jadeirons/dictionary-project"
             target="_blank"
+            rel="noopener noreferrer"
           >
             open-source.
           </a>
