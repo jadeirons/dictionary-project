@@ -3,7 +3,6 @@ import Phonetic from "./Phonetic.js";
 import Meanings from "./Meanings.js";
 
 export default function Definition(props) {
-  console.log(props.definition);
   if (props.definition) {
     return (
       <div className="Definition">
