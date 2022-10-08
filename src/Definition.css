@@ -1,6 +1,16 @@
+.Definition .row {
+  margin: 0;
+  padding-left: 10px;
+  display: flex;
+}
+
 .Definition .word {
-  display: inline-block;
   font-size: 30px;
-  padding-right: 100px;
   font-weight: 600;
+}
+
+.Definition .phonetics {
+  text-align: end;
+  position: relative;
+  top: 8px;
 }

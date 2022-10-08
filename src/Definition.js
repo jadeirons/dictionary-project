@@ -7,9 +7,9 @@ export default function Definition(props) {
   if (props.definition) {
     return (
       <section className="Definition">
-        <section>
-          <span className="word">{props.definition.word}</span>
-          <span>
+        <section className="row">
+          <span className="word col-6">{props.definition.word}</span>
+          <span className="phonetics col-6">
             {props.definition.phonetics
               .slice(0, 2)
               .map(function(phonetic, index) {
