@@ -1,10 +1,13 @@
 :root {
-  --main-color: blueviolet;
-  --background-color: #faf7fc;
+  --main-color: #f8d4bc;
+  --secondary-color: #a7ab9e;
+  --third-color: #e7e8e6;
 }
 
 body {
-  background-color: var(--background-color);
+  height: 100%;
+  background-image: url("../src/images/color_palette.png");
+  background-size: 60% auto;
 }
 
 section {
@@ -22,6 +25,10 @@ footer {
 }
 
 footer a {
+  color: var(--main-color);
+}
+
+footer a:hover {
   color: var(--main-color);
 }
 

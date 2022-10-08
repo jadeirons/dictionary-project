@@ -7,6 +7,7 @@
 }
 
 .Meanings .example {
-  font-size: 14px;
-  opacity: 80%;
+  font-size: 15px;
+  color: var(--secondary-color);
+  font-weight: 600;
 }
