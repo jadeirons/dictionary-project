@@ -1,7 +1,7 @@
 .Phonetic .phonetic-text {
   font-size: 18px;
   font-weight: 500;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .Phonetic .phonetic-listen {
@@ -11,6 +11,7 @@
   padding: 8px;
   border-radius: 4px;
   border: var(--main-color) 1px solid;
+  margin-right: 15px;
 }
 
 .Phonetic .phonetic-listen:hover {
