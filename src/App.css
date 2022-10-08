@@ -1,12 +1,30 @@
-.container {
-  margin-top: 30px;
+:root {
+  --main-color: blueviolet;
+  --background-color: #faf7fc;
 }
 
-header {
-  text-align: center;
+body {
+  background-color: var(--background-color);
+}
+
+section {
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px;
+  padding-left: 20px;
+  margin: 10px;
 }
 
 footer {
   text-align: center;
   font-size: 12px;
+  margin-bottom: 30px;
+}
+
+footer a {
+  color: var(--main-color);
+}
+
+.container {
+  margin-top: 30px;
 }

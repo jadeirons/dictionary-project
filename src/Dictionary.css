@@ -1,6 +1,14 @@
-.search {
+.Dictionary .search {
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 20px;
+  outline: none;
+  border: 1px var(--main-color) solid;
+  width: 80%;
+  border-radius: 4px;
+}
+
+.Dictionary h1 {
+  text-align: center;
 }

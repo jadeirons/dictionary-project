@@ -1,0 +1,22 @@
+.Phonetic .phonetic-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 15px;
+  padding-left: 60px;
+}
+
+.Phonetic .phonetic-listen {
+  font-size: 14px;
+  color: var(--main-color);
+  background: white;
+  padding: 8px;
+  border-radius: 4px;
+  border: blueviolet 1px solid;
+}
+
+.Phonetic .phonetic-listen:hover {
+  text-decoration: none;
+  color: white;
+  background: var(--main-color);
+  transition: all 150ms ease-in-out;
+}
