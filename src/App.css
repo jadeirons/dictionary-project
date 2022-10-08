@@ -7,7 +7,7 @@
 body {
   height: 100%;
   background-image: url("../src/images/color_palette.png");
-  background-size: 60% auto;
+  background-size: 100% 100vh;
 }
 
 section {
@@ -25,11 +25,12 @@ footer {
 }
 
 footer a {
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 footer a:hover {
   color: var(--main-color);
+  text-decoration: none;
 }
 
 .container {

@@ -9,15 +9,18 @@ function App() {
         <main>
           <Dictionary />
         </main>
+
         <footer>
-          This project was coded by Jade Irons and is{" "}
-          <a
-            href="https://github.com/jadeirons/dictionary-project"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            open-source.
-          </a>
+          <section>
+            This project was coded by Jade Irons and is{" "}
+            <a
+              href="https://github.com/jadeirons/dictionary-project"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              open-source.
+            </a>
+          </section>
         </footer>
       </div>
     </div>
