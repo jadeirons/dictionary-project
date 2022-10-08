@@ -1,20 +1,33 @@
 import React, { useState } from "react";
 import axios from "axios";
+
 import "./Dictionary.css";
 import Definition from "./Definition";
+import Image from "./Image";
 
 export default function Dictionary() {
   let [searchTerm, setSearchTerm] = useState("");
   let [definition, setDefinition] = useState(null);
+  let [image, setImage] = useState(null);
 
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     setDefinition(response.data[0]);
+  }
+
+  function handleImageResponse(response) {
+    setImage(response.data.photos);
   }
 
   function search(event) {
     event.preventDefault();
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchTerm}`;
-    axios.get(apiUrl).then(handleResponse);
+    const dictionaryApiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchTerm}`;
+    axios.get(dictionaryApiUrl).then(handleDictionaryResponse);
+
+    const imageApiKey =
+      "563492ad6f917000010000017d6740801d0c416189dd728c93a9d032";
+    const imageApiUrl = `https://api.pexels.com/v1/search?query=${searchTerm}&per_page=9`;
+    const headers = { Authorization: `Bearer ${imageApiKey}` };
+    axios.get(imageApiUrl, { headers: headers }).then(handleImageResponse);
   }
 
   function handleSearchTerm(event) {
@@ -36,6 +49,7 @@ export default function Dictionary() {
       </section>
 
       <Definition definition={definition} />
+      <Image image={image} />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import "./Definition.css";
 export default function Definition(props) {
   if (props.definition) {
     return (
-      <div className="Definition">
+      <section className="Definition">
         <section>
           <span className="word">{props.definition.word}</span>
           <span>
@@ -29,7 +29,7 @@ export default function Definition(props) {
             </div>
           );
         })}
-      </div>
+      </section>
     );
   } else {
     return null;
